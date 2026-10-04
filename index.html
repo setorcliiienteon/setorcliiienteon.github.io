@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. V. Pereira Serviços Administrativos LTDA</title>
+<meta name="description" content="M. V. Pereira Serviços Administrativos LTDA — soluções em serviços administrativos em Belo Horizonte/MG.">
+<style>
+  :root{
+    --azul:#1a3a5c;
+    --azul-claro:#2d5a8a;
+    --cinza:#f5f6f8;
+    --texto:#333;
+    --dourado:#c9a227;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+  body{color:var(--texto);line-height:1.7;}
+  a{text-decoration:none;color:inherit;}
+  /* Header */
+  header{
+    background:var(--azul);color:#fff;position:sticky;top:0;z-index:100;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+  }
+  .container{max-width:1100px;margin:0 auto;padding:0 20px;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;}
+  .logo{font-size:1.25rem;font-weight:700;}
+  .logo span{color:var(--dourado);}
+  nav ul{display:flex;gap:25px;list-style:none;}
+  nav a{font-size:.95rem;transition:color .2s;}
+  nav a:hover{color:var(--dourado);}
+  @media(max-width:820px){
+    .header-inner{flex-direction:column;gap:10px;}
+    nav ul{flex-wrap:wrap;justify-content:center;gap:12px;}
+  }
+  /* Hero */
+  .hero{
+    background:linear-gradient(rgba(26,58,92,.88),rgba(26,58,92,.88)),#1a3a5c;
+    color:#fff;text-align:center;padding:90px 20px;
+  }
+  .hero h1{font-size:2.2rem;margin-bottom:15px;}
+  .hero p{font-size:1.15rem;max-width:700px;margin:0 auto 30px;color:#dbe6f0;}
+  .btn{
+    display:inline-block;background:var(--dourado);color:#1a3a5c;font-weight:700;
+    padding:12px 32px;border-radius:6px;transition:transform .2s,background .2s;
+  }
+  .btn:hover{transform:translateY(-2px);background:#e0b838;}
+  section{padding:70px 0;}
+  section h2{
+    text-align:center;color:var(--azul);font-size:1.8rem;margin-bottom:10px;
+  }
+  .subtitulo{text-align:center;color:#777;margin-bottom:45px;font-size:1.05rem;}
+  /* Sobre */
+  #sobre p{max-width:800px;margin:0 auto;text-align:center;font-size:1.05rem;}
+  /* Serviços */
+  #servicos{background:var(--cinza);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+  .card{
+    background:#fff;border-radius:10px;padding:30px 25px;
+    box-shadow:0 2px 10px rgba(0,0,0,.07);transition:transform .2s,box-shadow .2s;
+  }
+  .card:hover{transform:translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,.12);}
+  .card .icone{font-size:2rem;margin-bottom:12px;}
+  .card h3{color:var(--azul);margin-bottom:10px;font-size:1.1rem;}
+  .card p{font-size:.95rem;color:#555;}
+  /* Conteúdo jurídico */
+  #privacidade, #termos{background:var(--cinza);}
+  .legal{max-width:850px;margin:0 auto;background:#fff;padding:40px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.06);}
+  .legal h3{color:var(--azul);margin:25px 0 8px;font-size:1.1rem;}
+  .legal h3:first-child{margin-top:0;}
+  .legal p,.legal li{font-size:.95rem;color:#444;margin-bottom:8px;}
+  .legal ul{margin:0 0 10px 20px;}
+  .nota{font-size:.85rem;color:#888;font-style:italic;margin-top:20px;}
+  /* Contato */
+  .contato-card{max-width:600px;margin:0 auto;background:#fff;padding:40px;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,.07);text-align:center;}
+  .contato-card p{margin-bottom:8px;}
+  /* Rodapé */
+  footer{background:var(--azul);color:#cbd8e4;padding:50px 0 25px;font-size:.9rem;}
+  footer h4{color:#fff;margin-bottom:15px;font-size:1.05rem;}
+  .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:35px;margin-bottom:35px;}
+  footer p{margin-bottom:6px;}
+  footer strong{color:#fff;}
+  .copyright{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;font-size:.8rem;color:#8fa5ba;}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">M. V. Pereira <span>Serviços Administrativos</span></div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#privacidade">Privacidade</a></li>
+        <li><a href="#termos">Termos de Uso</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Soluções administrativas para o seu negócio</h1>
+  <p>A M. V. Pereira Serviços Administrativos LTDA oferece serviços de gestão, organização e apoio administrativo com qualidade, confiança e compromisso com seus clientes.</p>
+  <a href="#contato" class="btn">Fale Conosco</a>
+</div>
+
+<section id="sobre">
+  <div class="container">
+    <h2>Sobre Nós</h2>
+    <p class="subtitulo">Parceria e eficiência na gestão do seu negócio</p>
+    <p>Fundada em Belo Horizonte/MG, a M. V. Pereira Serviços Administrativos LTDA tem como missão oferecer serviços administrativos de qualidade, contribuindo para a organização, o crescimento e a eficiência das empresas atendidas. Atuamos com responsabilidade, ética e foco total na satisfação do cliente.</p>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <h2>Nossos Serviços</h2>
+    <p class="subtitulo">Conheça as soluções que oferecemos para a sua empresa</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icone">🗂️</div>
+        <h3>Gestão de Documentos</h3>
+        <p>Organização, classificação e administração de documentos empresariais, garantindo segurança e facilidade de acesso às informações.</p>
+      </div>
+      <div class="card">
+        <div class="icone">📊</div>
+        <h3>Rotinas Administrativas</h3>
+        <p>Execução e gestão de rotinas administrativas do dia a dia: controle de agenda, atendimento, organização de processos e fluxos de trabalho.</p>
+      </div>
+      <div class="card">
+        <div class="icone">👥</div>
+        <h3>Apoio em Recursos Humanos</h3>
+        <p>Suporte nas atividades de RH, como organização de documentos de colaboradores, controle de registros e apoio em processos admissionais e demissionais.</p>
+      </div>
+      <div class="card">
+        <div class="icone">🧾</div>
+        <h3>Gestão de Contas a Pagar e Receber</h3>
+        <p>Controle e organização de contas a pagar e a receber, emissão de relatórios e acompanhamento financeiro administrativo.</p>
+      </div>
+      <div class="card">
+        <div class="icone">📞</div>
+        <h3>Atendimento e Secretariado</h3>
+        <p>Serviços de atendimento telefônico, gestão de correspondências e apoio na rotina de secretariado empresarial.</p>
+      </div>
+      <div class="card">
+        <div class="icone">📈</div>
+        <h3>Apoio à Gestão</h3>
+        <p>Elaboração de relatórios, planilhas e demonstrativos, apoiando a tomada de decisão e o planejamento da sua empresa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="container">
+    <h2>Contato</h2>
+    <p class="subtitulo">Estamos à disposição para atender você</p>
+    <div class="contato-card">
+      <p><strong>Empresa:</strong> M. V. Pereira Serviços Administrativos LTDA</p>
+      <p><strong>Endereço:</strong> Avenida Vilarinho, 2900 — Apt 801, Bloco 04</p>
+      <p>Bairro Cenáculo — Belo Horizonte/MG — CEP 31615-250</p>
+      <p><strong>CNPJ:</strong> 58.357.938/0001-43</p>
+    </div>
+  </div>
+</section>
+
+<section id="privacidade">
+  <div class="container">
+    <h2>Política de Privacidade</h2>
+    <p class="subtitulo">Atualizada em outubro de 2026</p>
+    <div class="legal">
+      <h3>1. Introdução</h3>
+      <p>A M. V. Pereira Serviços Administrativos LTDA ("empresa", "nós") respeita a sua privacidade e está comprometida com a proteção dos dados pessoais tratados em suas atividades, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+
+      <h3>2. Dados coletados</h3>
+      <p>Podemos coletar as seguintes informações:</p>
+      <ul>
+        <li>Dados de identificação: nome, CPF/CNPJ e dados de contato (e-mail, telefone, endereço);</li>
+        <li>Dados relacionados à prestação de serviços: informações necessárias à execução dos serviços contratados;</li>
+        <li>Dados de navegação: informações sobre o acesso ao nosso site, quando aplicável.</li>
+      </ul>
+
+      <h3>3. Finalidade do tratamento</h3>
+      <p>Os dados pessoais são tratados exclusivamente para finalidades legítimas, tais como: execução de contratos de prestação de serviços, cumprimento de obrigações legais e regulatórias, atendimento a solicitações de clientes e melhoria dos nossos serviços.</p>
+
+      <h3>4. Compartilhamento de dados</h3>
+      <p>Não vendemos, alugamos ou compartilhamos dados pessoais com terceiros, exceto quando necessário para a execução dos serviços contratados, mediante contratos de confidencialidade, ou quando exigido por lei, ordem judicial ou autoridade competente.</p>
+
+      <h3>5. Segurança das informações</h3>
+      <p>Adotamos medidas técnicas e administrativas adequadas para proteger os dados pessoais contra acessos não autorizados, perda, alteração ou divulgação indevida.</p>
+
+      <h3>6. Retenção de dados</h3>
+      <p>Os dados pessoais são mantidos pelo tempo necessário ao cumprimento das finalidades para as quais foram coletados e das obrigações legais aplicáveis, sendo posteriormente eliminados de forma segura.</p>
+
+      <h3>7. Direitos do titular</h3>
+      <p>Nos termos da LGPD, você pode solicitar, a qualquer momento: confirmação e acesso aos seus dados, correção de dados incompletos ou desatualizados, anonimização ou eliminação de dados tratados com consentimento, e informações sobre o compartilhamento dos seus dados.</p>
+
+      <h3>8. Encarregado de dados (DPO)</h3>
+      <p>Para exercer seus direitos ou esclarecer dúvidas sobre esta política, entre em contato conosco pelo endereço físico ou pelos canais de contato disponibilizados pela empresa.</p>
+
+      <h3>9. Alterações desta política</h3>
+      <p>Esta Política de Privacidade poderá ser atualizada periodicamente. Recomendamos a leitura periódica desta página.</p>
+    </div>
+  </div>
+</section>
+
+<section id="termos">
+  <div class="container">
+    <h2>Termos de Uso</h2>
+    <p class="subtitulo">Atualizados em outubro de 2026</p>
+    <div class="legal">
+      <h3>1. Aceitação dos termos</h3>
+      <p>Ao acessar e utilizar este site, o usuário declara ter lido, compreendido e aceitado estes Termos de Uso, bem como a Política de Privacidade da M. V. Pereira Serviços Administrativos LTDA.</p>
+
+      <h3>2. Objeto</h3>
+      <p>Este site tem por finalidade apresentar informações institucionais sobre a empresa, seus serviços e formas de contato. O conteúdo exibido tem caráter informativo e não constitui oferta vinculante.</p>
+
+      <h3>3. Propriedade intelectual</h3>
+      <p>Todos os textos, marcas, logotipos, imagens e demais conteúdos deste site são de propriedade da M. V. Pereira Serviços Administrativos LTDA, sendo vedada a reprodução, distribuição ou modificação sem autorização prévia e por escrito.</p>
+
+      <h3>4. Serviços</h3>
+      <p>A contratação de quaisquer serviços descritos neste site depende da celebração de contrato específico, que conterá as condições, prazos, preços e responsabilidades das partes. As informações aqui exibidas não substituem a análise e formalização do contrato de prestação de serviços.</p>
+
+      <h3>5. Obrigações do usuário</h3>
+      <p>O usuário se compromete a utilizar este site de forma lícita, abstendo-se de praticar quaisquer atos que possam prejudicar a integridade, disponibilidade ou funcionalidade do site.</p>
+
+      <h3>6. Limitação de responsabilidade</h3>
+      <p>A empresa não se responsabiliza por danos decorrentes de: indisponibilidade temporária do site, uso indevido das informações aqui contidas, ou atos de terceiros que ultrapassem o seu controle razoável.</p>
+
+      <h3>7. Legislação aplicável</h3>
+      <p>Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. Fica eleito o foro da Comarca de Belo Horizonte/MG para dirimir eventuais controvérsias.</p>
+
+      <h3>8. Alterações</h3>
+      <p>A M. V. Pereira Serviços Administrativos LTDA poderá alterar estes Termos de Uso a qualquer momento, sendo as alterações publicadas nesta página.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>M. V. Pereira Serviços Administrativos LTDA</h4>
+        <p>Soluções em serviços administrativos com qualidade, ética e compromisso.</p>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <p><strong>Logradouro:</strong> Avenida Vilarinho, 2900</p>
+        <p><strong>Complemento:</strong> Apt 801, Bloco 04</p>
+        <p><strong>Bairro:</strong> Cenáculo</p>
+        <p><strong>CEP:</strong> 31615-250</p>
+        <p><strong>Município:</strong> Belo Horizonte</p>
+        <p><strong>Estado:</strong> Minas Gerais</p>
+      </div>
+      <div>
+        <h4>Dados da Empresa</h4>
+        <p><strong>CNPJ:</strong> 58.357.938/0001-43</p>
+        <p><strong>Navegação:</strong></p>
+        <p><a href="#privacidade">Política de Privacidade</a></p>
+        <p><a href="#termos">Termos de Uso</a></p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 M. V. Pereira Serviços Administrativos LTDA — Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
